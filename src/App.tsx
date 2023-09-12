@@ -1,4 +1,4 @@
-import { FileVideo, Github, Sidebar, Upload, Wand2 } from "lucide-react";
+import { FileVideo, Github, Upload, Wand2 } from "lucide-react";
 import { ToggleThemeMode } from "./components/ui/ToggleThemeMode";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
