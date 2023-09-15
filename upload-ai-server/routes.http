@@ -35,5 +35,5 @@ Content-Type: application/json
 {
 	"videoId": "d969e73a-6158-4e18-901e-898cefc926c1",
 	"temperature": 0.5,
-	"template": "genarate an overall of the video: ''' {transcription}'''"
+	"prompt": "genarate an overall of the video: ''' {transcription}'''"
 }

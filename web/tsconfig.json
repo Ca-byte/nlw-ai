@@ -23,9 +23,9 @@
     /* Paths */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["web/src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["web/src"],
+  "include": ["./src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
