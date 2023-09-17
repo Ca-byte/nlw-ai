@@ -6,7 +6,7 @@ async function main() {
 
   await prisma.prompt.create({
     data: {
-			title: 'YouTube Title',
+			title: 'Video Title',
 			template: `Your task is to generate three titles for a YouTube video.
 			
 			Below, you will receive a transcription of this video. Use this transcription to generate the titles.
@@ -15,7 +15,7 @@ async function main() {
 			The titles must have a maximum of 60 characters.
 			The titles should be catchy and appealing to maximize clicks.
 			
-			Return ONLY the three titles in list format as in the example below and in English language:
+			Return ONLY the three titles in list format as in the example below and in the English language:
 			'''
 			
 			Title 1
@@ -31,7 +31,7 @@ Transcription:
 
   await prisma.prompt.create({
     data: {
-		title: 'YouTube Description',
+		title: 'Audio Description',
 		template: `Your role is to generate a concise description for a YouTube video.
 
 Below, you will receive a transcription of this video. Use this transcription to generate the description.
