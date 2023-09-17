@@ -42,7 +42,7 @@ Use attention-grabbing words to captivate the reader.
 
 Additionally, at the end of the description, include a list of 3 to 10 hashtags in lowercase containing keywords from the video.
 
-The return should follow the following format and in English language:
+The return should follow the following format and in the English language:
 '''
 Description.
 
