@@ -2,16 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/server.ts", 
-      "use": "@vercel/node",
-      "config": {
-        "NODE_VERSION": "14" 
-      },
-      "build": {
-        "env": {
-          "PRISMA_GENERATE": "true"
-        }
-      }
+      "src": "src/server.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
