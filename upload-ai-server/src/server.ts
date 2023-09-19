@@ -8,7 +8,8 @@ import fastifyCors from "@fastify/cors";
 const app = fastify()
 
 app.register(fastifyCors, {
-	origin: '*',
+	origin: 'https://nlw-ai-mu.vercel.app/',
+	credentials: true,
 })
 
 
