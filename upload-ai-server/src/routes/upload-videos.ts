@@ -14,9 +14,9 @@ export async function uploadVideoRoute(app:FastifyInstance) {
 		limits: {
 			fileSize: 1_048_576 * 25 //25mb
 		}
-	} )
-	app.post('/videos', async(req, reply) => {
-		const data = await req.file()
+	})
+	app.post('/videos', async (request, reply) => {
+    const data = await request.file()
 		
 		if (!data){
 			return reply.status(400).send({ error: 'Missing file input.' })

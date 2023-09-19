@@ -1,5 +1,4 @@
 import { FastifyInstance } from "fastify";
-import { createReadStream } from "node:fs";
 import { streamToResponse, OpenAIStream } from 'ai'
 import { prisma } from "../lib/prisma";
 import { z } from 'zod'

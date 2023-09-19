@@ -1,9 +1,9 @@
 import { fastify } from "fastify";
+import { fastifyCors } from "@fastify/cors";
 import { getAllPromptsRoute } from "./routes/get-all-prompts";
 import { uploadVideoRoute } from "./routes/upload-videos";
 import { createTranscriptionRoute } from "./routes/create-transcription";
 import { genarationAIRoute } from "./routes/genarate-ai-completion";
-import fastifyCors from "@fastify/cors";
 
 const app = fastify()
 
