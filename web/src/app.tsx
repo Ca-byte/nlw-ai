@@ -22,7 +22,7 @@ export function App() {
     completion,
     isLoading,
   } = useCompletion({
-    api: 'https://nlw-ai-lake.vercel.app/ai/complete',
+    api: 'https://nlw-ai-mu.vercel.app/ai/complete',
     body: {
       videoId,
       temperature,
