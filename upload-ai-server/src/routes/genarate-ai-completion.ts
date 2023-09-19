@@ -38,7 +38,7 @@ export async function genarationAIRoute(app:FastifyInstance) {
 
     streamToResponse(stream, reply.raw, {
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://nlw-ai-mu.vercel.app/',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
       }
     })

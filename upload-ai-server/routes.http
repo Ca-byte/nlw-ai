@@ -1,11 +1,11 @@
 #@name get-prompts
-GET http://localhost:3333/prompts
+GET https://nlw-ai-lake.vercel.app/prompts
 
 
 ###
 
 #@name upload
-POST  http://localhost:3333/videos
+POST  https://nlw-ai-lake.vercel.app/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -19,7 +19,7 @@ Content-Type: audio/mpeg
 ###
 
 #@name create-trancription
-POST http://localhost:3333/videos/bf7608a1-a0a6-4ef9-9c84-17d4905eee0e/transcription
+POST https://nlw-ai-lake.vercel.app/videos/bf7608a1-a0a6-4ef9-9c84-17d4905eee0e/transcription
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 ###
 
 #@name genarate-ai-completion
-POST http://localhost:3333/ai/complete
+POST https://nlw-ai-lake.vercel.app/ai/complete
 Content-Type: application/json
 
 {
