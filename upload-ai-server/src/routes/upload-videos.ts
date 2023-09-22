@@ -11,7 +11,7 @@ import pgPromise from "pg-promise";
 const pump = promisify(pipeline)
 const pgp = pgPromise();
 
-const db = pgp("postgres://default:2iuIPAT1dYyQ@ep-purple-glitter-18800565-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15");
+const db = pgp("postgres://default:2iuIPAT1dYyQ@ep-purple-glitter-18800565-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15" || "postgres://default:2iuIPAT1dYyQ@ep-purple-glitter-18800565-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb");
 export async function uploadVideoRoute(app:FastifyInstance) {
 	app.register(fastifyMultipart,{
 		limits: {
