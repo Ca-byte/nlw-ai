@@ -10,8 +10,15 @@ import pgPromise from "pg-promise";
 
 const pump = promisify(pipeline)
 const pgp = pgPromise();
+const dbUrl = process.env.POSTGRES_URL || process.env.POSTGRES_PRISMA_URL;
 
-const db = pgp("postgres://default:2iuIPAT1dYyQ@ep-purple-glitter-18800565-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15" || "postgres://default:2iuIPAT1dYyQ@ep-purple-glitter-18800565-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb");
+if (!dbUrl) {
+  // Handle the case where neither variable is defined
+  throw new Error('No PostgreSQL connection URL provided.');
+}
+
+const db = pgp(dbUrl);
+
 export async function uploadVideoRoute(app:FastifyInstance) {
 	app.register(fastifyMultipart,{
 		limits: {
